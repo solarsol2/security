@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KCOP — 일상에 안전을 더하는 안전용품 스토어</title>
+  <meta name="description" content="해외에서 검증된 생활 안전용품을 직접 고르고 검수해 문 앞까지 보내드립니다. 경보기, 도어 스토퍼, 휴대용 잠금장치, 몰래카메라 탐지기.">
+  <meta name="theme-color" content="#0F172A">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+
+  <!-- Notice bar -->
+  <div class="notice" data-notice>
+    <div class="container notice__inner">
+      <p class="notice__text"><strong>OPEN</strong> 30,000원 이상 구매 시 국제·국내 배송비 모두 무료</p>
+      <div class="notice__actions">
+        <button type="button" class="notice__today" data-notice-today>오늘 하루 보지 않기</button>
+        <button type="button" class="notice__close" data-notice-close aria-label="공지 닫기">
+          <svg class="icon" aria-hidden="true"><use href="#i-close"></use></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" data-header>
+    <div class="container header__inner">
+      <a class="logo" href="index.html" aria-label="KCOP 홈">
+        <svg class="logo__mark" viewBox="0 0 32 36" aria-hidden="true">
+          <path class="logo__shield" d="M16 1.5 2.5 6.6v10.2c0 8.5 5.7 15.3 13.5 17.7 7.8-2.4 13.5-9.2 13.5-17.7V6.6Z"/>
+          <path class="logo__key" d="M16 10.5a4.5 4.5 0 0 0-2.1 8.5l-1 6.5h6.2l-1-6.5a4.5 4.5 0 0 0-2.1-8.5Z"/>
+        </svg>
+        <span class="logo__word">KCOP</span>
+      </a>
+
+      <nav class="gnb" data-gnb aria-label="주요 메뉴">
+        <div class="gnb__dim" data-menu-close></div>
+        <div class="gnb__panel">
+        <div class="gnb__head">
+          <span class="gnb__title">메뉴</span>
+          <button type="button" class="icon-btn" data-menu-close aria-label="메뉴 닫기"><svg class="icon" aria-hidden="true"><use href="#i-close"></use></svg></button>
+        </div>
+        <ul class="gnb__list">
+          <li><a class="gnb__link" href="index.html?cat=all#products" data-cat-link="all">전체상품</a></li>
+          <li><a class="gnb__link" href="index.html?cat=walk#products" data-cat-link="walk">호신·귀갓길</a></li>
+          <li><a class="gnb__link" href="index.html?cat=home#products" data-cat-link="home">현관·창문</a></li>
+          <li><a class="gnb__link" href="index.html?cat=travel#products" data-cat-link="travel">여행·숙소</a></li>
+          <li><a class="gnb__link" href="index.html#support">고객센터</a></li>
+        </ul>
+        <div class="gnb__foot">
+          <button type="button" class="btn btn--primary btn--block" data-login-open>로그인</button>
+          <button type="button" class="btn btn--outline btn--block" data-quote-open>단체 구매 견적</button>
+        </div>
+        </div>
+      </nav>
+
+      <div class="header__actions">
+        <button type="button" class="icon-btn" data-search-open aria-label="상품 검색"><svg class="icon" aria-hidden="true"><use href="#i-search"></use></svg></button>
+        <button type="button" class="header__login" data-login-open>로그인</button>
+        <button type="button" class="icon-btn cart-btn" data-cart-open aria-label="장바구니">
+          <svg class="icon" aria-hidden="true"><use href="#i-bag"></use></svg>
+          <span class="cart-btn__count is-empty" data-cart-count>0</span>
+        </button>
+        <button type="button" class="icon-btn header__menu" data-menu-open aria-label="메뉴 열기"><svg class="icon" aria-hidden="true"><use href="#i-menu"></use></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow eyebrow--light">Everyday Safety Store</p>
+          <h1 id="hero-title" class="hero__title">당신의 일상을 지키는<br><span class="hero__accent">가장 완벽한 솔루션</span></h1>
+          <p class="hero__lead">해외에서 검증된 생활 안전용품을 직접 써보고 골랐습니다.<br class="br-desktop"> 현지에서 검수한 뒤 문 앞까지 보내드립니다.</p>
+          <div class="hero__cta">
+            <a class="btn btn--accent btn--lg" href="#products">베스트 상품 보기 <svg class="icon" aria-hidden="true"><use href="#i-arrowRight"></use></svg></a>
+            <button type="button" class="btn btn--ghost-light btn--lg" data-quote-open>맞춤 견적 받기</button>
+          </div>
+          <dl class="hero__facts">
+            <div><dt>평균 도착</dt><dd>7–12<small>일</small></dd></div>
+            <div><dt>출고 전 검수</dt><dd>100<small>%</small></dd></div>
+            <div><dt>무료배송 기준</dt><dd>3<small>만원</small></dd></div>
+          </dl>
+        </div>
+        <figure class="hero__visual">
+          <div class="media media--hero">
+            <img src="https://unsplash.com/photos/a6DU2amwBnI/download?force=true&w=1100" alt="밤거리를 걷는 사람" data-fallback-icon="shield" fetchpriority="high">
+          </div>
+          <figcaption class="hero__card">
+            <span class="hero__card-icon"><svg class="icon" aria-hidden="true"><use href="#i-scan"></use></svg></span>
+            <span>
+              <strong>현지 검수 후 출고</strong>
+              작동·외관·구성품을 하나씩 확인합니다
+            </span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Trust marquee -->
+    <section class="marquee" aria-label="KCOP 서비스 약속">
+      <div class="marquee__track">
+        <ul class="marquee__list">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-scan"></use></svg>출고 전 전수 검수</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-file"></use></svg>통관 절차 대행</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-truck"></use></svg>국제·국내 배송 실시간 조회</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-package"></use></svg>30,000원 이상 무료배송</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-refresh"></use></svg>불량·오배송 무상 재발송</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-headset"></use></svg>평일 10:00–17:00 상담</li>
+        </ul>
+        <ul class="marquee__list" aria-hidden="true">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-scan"></use></svg>출고 전 전수 검수</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-file"></use></svg>통관 절차 대행</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-truck"></use></svg>국제·국내 배송 실시간 조회</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-package"></use></svg>30,000원 이상 무료배송</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-refresh"></use></svg>불량·오배송 무상 재발송</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-headset"></use></svg>평일 10:00–17:00 상담</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Situations -->
+    <section class="section" aria-labelledby="situation-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="section-head__index">01 — Situation</p>
+          <div class="section-head__main">
+            <h2 id="situation-title" class="section-head__title">불안한 순간은 대개<br>익숙한 곳에서 찾아옵니다</h2>
+            <p class="section-head__desc">혼자 사는 집, 늦은 귀갓길, 처음 묵는 숙소. 상황에 맞춰 꼭 필요한 것만 골라두었습니다.</p>
+          </div>
+        </header>
+
+        <div class="situations">
+          <a class="situation" href="index.html?cat=home#products" data-cat-link="home" data-reveal>
+            <div class="media situation__media">
+              <img src="https://unsplash.com/photos/fvoGQce1GTs/download?force=true&w=800" alt="현관문 손잡이" loading="lazy" data-fallback-icon="door">
+            </div>
+            <div class="situation__body">
+              <p class="situation__label">혼자 사는 집</p>
+              <h3 class="situation__title">현관과 창문부터<br>한 겹 더 단단하게</h3>
+              <span class="link-arrow">관련 상품 보기 <svg class="icon" aria-hidden="true"><use href="#i-arrowRight"></use></svg></span>
+            </div>
+          </a>
+          <a class="situation" href="index.html?cat=walk#products" data-cat-link="walk" data-reveal>
+            <div class="media situation__media">
+              <img src="https://unsplash.com/photos/9zQgfrzZCbA/download?force=true&w=800" alt="밤길을 걷는 사람" loading="lazy" data-fallback-icon="bell">
+            </div>
+            <div class="situation__body">
+              <p class="situation__label">늦은 귀갓길</p>
+              <h3 class="situation__title">손이 닿는 곳에<br>소리를 준비해 두세요</h3>
+              <span class="link-arrow">관련 상품 보기 <svg class="icon" aria-hidden="true"><use href="#i-arrowRight"></use></svg></span>
+            </div>
+          </a>
+          <a class="situation" href="index.html?cat=travel#products" data-cat-link="travel" data-reveal>
+            <div class="media situation__media">
+              <img src="https://unsplash.com/photos/G9neENK1Z5I/download?force=true&w=800" alt="호텔 복도" loading="lazy" data-fallback-icon="luggage">
+            </div>
+            <div class="situation__body">
+              <p class="situation__label">출장·여행 숙소</p>
+              <h3 class="situation__title">체크인 후 3분,<br>방 안부터 점검합니다</h3>
+              <span class="link-arrow">관련 상품 보기 <svg class="icon" aria-hidden="true"><use href="#i-arrowRight"></use></svg></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="section section--gray" id="products" aria-labelledby="products-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="section-head__index">02 — Products</p>
+          <div class="section-head__main">
+            <h2 id="products-title" class="section-head__title">지금 많이 찾는 안전용품</h2>
+            <p class="section-head__desc">가격 부담은 낮추고, 써보지 않은 상품은 올리지 않습니다.</p>
+          </div>
+        </header>
+
+        <div class="tabs" role="tablist" aria-label="상품 카테고리" data-tabs></div>
+        <div class="product-grid" data-product-grid aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="section-head__index">03 — Logistics</p>
+          <div class="section-head__main">
+            <h2 id="process-title" class="section-head__title">주문부터 도착까지,<br>모든 단계를 보여드립니다</h2>
+            <p class="section-head__desc">해외구매대행은 기다림이 길어 불안합니다. 그래서 단계마다 어디쯤 왔는지 알려드립니다.</p>
+          </div>
+        </header>
+
+        <ol class="process">
+          <li class="process__step" data-reveal>
+            <span class="process__num">01</span>
+            <span class="process__day">D+0</span>
+            <h3 class="process__title">주문·결제</h3>
+            <p class="process__text">결제와 함께 개인통관고유부호를 확인하고, 해외 판매처에 바로 발주합니다.</p>
+          </li>
+          <li class="process__step" data-reveal>
+            <span class="process__num">02</span>
+            <span class="process__day">D+1–3</span>
+            <h3 class="process__title">현지 입고·검수</h3>
+            <p class="process__text">현지 물류센터에서 작동, 외관, 구성품을 하나씩 확인한 뒤 재포장합니다.</p>
+          </li>
+          <li class="process__step" data-reveal>
+            <span class="process__num">03</span>
+            <span class="process__day">D+3–8</span>
+            <h3 class="process__title">항공 운송·통관</h3>
+            <p class="process__text">항공편으로 들어와 목록통관 절차를 거칩니다. 통관 진행 상황을 문자로 알려드립니다.</p>
+          </li>
+          <li class="process__step" data-reveal>
+            <span class="process__num">04</span>
+            <span class="process__day">D+8–12</span>
+            <h3 class="process__title">국내 배송</h3>
+            <p class="process__text">통관이 끝나면 국내 택배로 넘어갑니다. 대부분 1–2일 안에 도착합니다.</p>
+          </li>
+        </ol>
+
+        <aside class="callout" data-reveal>
+          <span class="callout__icon"><svg class="icon" aria-hidden="true"><use href="#i-file"></use></svg></span>
+          <div class="callout__body">
+            <h3 class="callout__title">개인통관고유부호가 필요합니다</h3>
+            <p class="callout__text">해외 직구 상품은 수입 신고에 주민등록번호 대신 개인통관고유부호를 씁니다. 관세청 유니패스에서 1분이면 무료로 발급받을 수 있습니다.</p>
+          </div>
+          <a class="btn btn--outline" href="https://unipass.customs.go.kr/csp/persIndex.do" target="_blank" rel="noopener">발급 방법 보기 <svg class="icon" aria-hidden="true"><use href="#i-arrowRight"></use></svg></a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Principles -->
+    <section class="section section--gray" aria-labelledby="principle-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="section-head__index">04 — Principle</p>
+          <div class="section-head__main">
+            <h2 id="principle-title" class="section-head__title">안전용품이니까,<br>파는 방식도 정직해야 합니다</h2>
+          </div>
+        </header>
+
+        <div class="principles">
+          <article class="principle" data-reveal>
+            <span class="principle__icon"><svg class="icon" aria-hidden="true"><use href="#i-scan"></use></svg></span>
+            <h3 class="principle__title">직접 써보고 고릅니다</h3>
+            <p class="principle__text">샘플을 먼저 들여와 소리 크기, 마감, 내구성을 확인합니다. 기준에 못 미치는 상품은 아무리 잘 팔려도 올리지 않습니다.</p>
+          </article>
+          <article class="principle" data-reveal>
+            <span class="principle__icon"><svg class="icon" aria-hidden="true"><use href="#i-info"></use></svg></span>
+            <h3 class="principle__title">과장 없이 설명합니다</h3>
+            <p class="principle__text">맞지 않는 문, 탐지하지 못하는 장비처럼 한계도 상세 페이지에 그대로 적습니다. 모르고 사는 일이 없도록.</p>
+          </article>
+          <article class="principle" data-reveal>
+            <span class="principle__icon"><svg class="icon" aria-hidden="true"><use href="#i-refresh"></use></svg></span>
+            <h3 class="principle__title">문제가 생기면 끝까지</h3>
+            <p class="principle__text">불량이나 오배송은 회수 없이 새 상품을 다시 보내드립니다. 해외 판매처와의 분쟁은 저희가 처리합니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Support / FAQ -->
+    <section class="section" id="support" aria-labelledby="support-title">
+      <div class="container support">
+        <div class="support__aside" data-reveal>
+          <p class="section-head__index">05 — Support</p>
+          <h2 id="support-title" class="section-head__title">자주 묻는 질문</h2>
+          <div class="contact-card">
+            <p class="contact-card__label">고객센터</p>
+            <a class="contact-card__phone" href="tel:0212345678">02-1234-5678</a>
+            <p class="contact-card__hours">평일 10:00–17:00 · 점심 12:30–13:30<br>주말·공휴일 휴무</p>
+            <div class="contact-card__actions">
+              <a class="btn btn--outline btn--sm" href="mailto:help@kcop.kr"><svg class="icon" aria-hidden="true"><use href="#i-chat"></use></svg>이메일 문의</a>
+              <button type="button" class="btn btn--primary btn--sm" data-quote-open>단체 견적</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq" data-reveal>
+          <details class="faq__item" open>
+            <summary class="faq__q">주문하면 언제 받을 수 있나요?<svg class="icon" aria-hidden="true"><use href="#i-chevronDown"></use></svg></summary>
+            <div class="faq__a"><p>결제일 기준 평균 7–12일 걸립니다. 현지 입고와 검수에 1–3일, 항공 운송과 통관에 3–5일, 국내 택배에 1–2일이 소요됩니다. 명절과 해외 현지 연휴 기간에는 며칠 더 걸릴 수 있습니다.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q">관세나 부가세를 따로 내야 하나요?<svg class="icon" aria-hidden="true"><use href="#i-chevronDown"></use></svg></summary>
+            <div class="faq__a"><p>개인 사용 목적으로 한 번에 미화 150달러 이하로 구매하시면 관·부가세가 면제됩니다. KCOP 상품은 대부분 이 기준 안에 들어오며, 같은 날 여러 번 주문해 합산 과세 대상이 될 수 있는 경우에는 결제 전에 안내해 드립니다.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q">개인통관고유부호는 왜 필요한가요?<svg class="icon" aria-hidden="true"><use href="#i-chevronDown"></use></svg></summary>
+            <div class="faq__a"><p>해외에서 들어오는 물품의 수입 신고에 주민등록번호 대신 사용하는 번호입니다. 관세청 유니패스에서 본인 인증 후 무료로 발급받을 수 있고, 주문자와 수령인 이름이 같아야 통관이 지연되지 않습니다.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q">교환이나 반품은 어떻게 하나요?<svg class="icon" aria-hidden="true"><use href="#i-chevronDown"></use></svg></summary>
+            <div class="faq__a"><p>상품을 받은 날로부터 7일 안에 고객센터로 신청해 주세요. 불량·오배송은 사진만 보내주시면 회수 없이 새 상품을 발송합니다. 단순 변심 반품은 국내 반품 주소로 보내주시며, 왕복 배송비가 차감됩니다.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q">전자제품도 KC 인증을 받았나요?<svg class="icon" aria-hidden="true"><use href="#i-chevronDown"></use></svg></summary>
+            <div class="faq__a"><p>구매대행으로 들여오는 일부 전기용품은 KC 인증 대상에서 면제되며, 해당 상품은 상세 페이지에 별도로 표시합니다. 국내 정격 전압과 맞지 않는 제품은 취급하지 않습니다.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bulk CTA -->
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="container cta-band__inner">
+        <div>
+          <p class="eyebrow eyebrow--light">Bulk Order</p>
+          <h2 id="cta-title" class="cta-band__title">기숙사, 학교, 임대 건물의 안전을<br>한 번에 준비하세요</h2>
+          <p class="cta-band__text">20개 이상 구매 시 수량별 단가와 로고 각인 옵션을 따로 안내해 드립니다.</p>
+        </div>
+        <button type="button" class="btn btn--light btn--lg" data-quote-open>맞춤 견적 받기 <svg class="icon" aria-hidden="true"><use href="#i-arrowRight"></use></svg></button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="logo logo--sm" href="index.html" aria-label="KCOP 홈">
+            <svg class="logo__mark" viewBox="0 0 32 36" aria-hidden="true">
+              <path class="logo__shield" d="M16 1.5 2.5 6.6v10.2c0 8.5 5.7 15.3 13.5 17.7 7.8-2.4 13.5-9.2 13.5-17.7V6.6Z"/>
+              <path class="logo__key" d="M16 10.5a4.5 4.5 0 0 0-2.1 8.5l-1 6.5h6.2l-1-6.5a4.5 4.5 0 0 0-2.1-8.5Z"/>
+            </svg>
+            <span class="logo__word">KCOP</span>
+          </a>
+          <p class="footer__slogan">일상에 안전을 더하다.</p>
+        </div>
+        <nav class="footer__nav" aria-label="쇼핑">
+          <h3 class="footer__heading">쇼핑</h3>
+          <ul>
+            <li><a href="index.html?cat=walk#products">호신·귀갓길</a></li>
+            <li><a href="index.html?cat=home#products">현관·창문</a></li>
+            <li><a href="index.html?cat=travel#products">여행·숙소</a></li>
+            <li><a href="index.html?cat=privacy#products">프라이버시</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__nav" aria-label="고객지원">
+          <h3 class="footer__heading">고객지원</h3>
+          <ul>
+            <li><a href="index.html#support">자주 묻는 질문</a></li>
+            <li><a href="#" data-quote-open>단체 구매 견적</a></li>
+            <li><a href="https://unipass.customs.go.kr/csp/persIndex.do" target="_blank" rel="noopener">통관부호 발급</a></li>
+            <li><a href="mailto:help@kcop.kr">이메일 문의</a></li>
+          </ul>
+        </nav>
+        <div class="footer__cs">
+          <h3 class="footer__heading">고객센터</h3>
+          <a class="footer__phone" href="tel:0212345678">02-1234-5678</a>
+          <p>평일 10:00–17:00<br>help@kcop.kr</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <ul class="footer__legal">
+          <li><a href="#" data-doc="terms">이용약관</a></li>
+          <li><a href="#" data-doc="privacy"><strong>개인정보처리방침</strong></a></li>
+          <li><a href="#" data-doc="business">사업자 정보</a></li>
+        </ul>
+        <p class="footer__info">상호 KCOP · 대표 홍길동 · 사업자등록번호 000-00-00000 · 통신판매업신고 제2026-서울마포-0000호<br>KCOP은 해외구매대행 사업자로, 상품의 해외 판매처와 별개입니다.</p>
+        <p class="footer__copy">© 2026 KCOP. Photos via <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/home.js"></script>
+</body>
+</html>
