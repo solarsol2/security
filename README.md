@@ -39,3 +39,6 @@ Settings → Pages → Branch를 이 브랜치 / `root`로 지정하면 됩니�
 - `assets/img/logo-light.png` — 어두운 배경용 (현재 헤더·푸터에서 사용)
 - `assets/img/logo.png` — 밝은 배경용 원본 색상
 - `assets/img/favicon.png` — 심볼만 따로 만든 파비콘
+
+## 업데이트 시 캐시
+CSS/JS를 수정하면 세 HTML 파일의 `?v=` 값을 함께 올려야 방문자 브라우저가 새 파일을 바로 불러옵니다.
