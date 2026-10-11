@@ -54,7 +54,11 @@
 
   /* ---------- Utils ---------- */
   KCOP.won = function (n) { return n.toLocaleString('ko-KR') + '원'; };
-  KCOP.photo = function (id, w) { return 'https://unsplash.com/photos/' + id + '/download?force=true&w=' + (w || 800); };
+  // 제품 사진 자리 표시 (실사 교체 전까지 사용할 촬영 가이드 텍스트)
+  KCOP.placeholder = function (text, w, h) {
+    return 'https://placehold.co/' + w + 'x' + (h || w) + '/E3E8E2/4F6155/png?text=' +
+      encodeURIComponent(text).replace(/%20/g, '+').replace(/%0A/g, '%5Cn');
+  };
   KCOP.getProduct = function (id) {
     return DATA.products.filter(function (p) { return p.id === id; })[0] || null;
   };
@@ -87,9 +91,10 @@
   };
 
   KCOP.media = function (p, w, extraClass) {
+    var src = p.imgSrc || KCOP.placeholder(p.img, w);
     return '<div class="media ' + (extraClass || '') + '">' +
-      '<img src="' + KCOP.photo(p.photo, w) + '" alt="' + KCOP.escape(p.name) + '" loading="lazy" decoding="async"' +
-      ' style="object-position:' + (p.focal || '50% 50%') + '" data-fallback-icon="' + KCOP.categoryIcon(p.categories[0]) + '">' +
+      '<img src="' + src + '" width="' + w + '" height="' + w + '" alt="' + KCOP.escape(p.name) + '" loading="lazy" decoding="async"' +
+      ' data-fallback-icon="' + KCOP.categoryIcon(p.categories[0]) + '">' +
       '</div>';
   };
 

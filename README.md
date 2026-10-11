@@ -30,6 +30,12 @@ assets/
 ## 배포 (GitHub Pages)
 Settings → Pages → Branch를 이 브랜치 / `root`로 지정하면 됩니다.
 
-## 이미지
-Unsplash License 무료 사진을 핫링크합니다. 불러오지 못하면 카테고리 아이콘 패널로 자동 대체됩니다.
-실제 판매 전에는 공급처 상품 사진으로 `data.js`의 `photo` 값을 교체하세요.
+## 이미지 교체 가이드
+모든 사진 자리는 `placehold.co` 플레이스홀더이며, 이미지 안의 텍스트가 들어갈 사진을 설명합니다.
+| 위치 | 파일 | 들어갈 사진 |
+| --- | --- | --- |
+| Hero 우측 | `index.html` `.hero__product` | 벽면 설치형 CCTV 누끼(투명 PNG, 1:1) |
+| 카테고리 4종 | `index.html` `.cat-card__media` | 상황별 대표 제품 연출컷(4:3) |
+| 상품 8종 | `assets/js/data.js` `img` | 화이트 배경 제품컷(1:1). 실사 경로를 `imgSrc`에 넣으면 우선 사용 |
+| 신뢰도 섹션 | `index.html` `.trust__main` / `.trust__inset` | 물류 관제실 요원(4:5) / 배송 차량(16:10) |
+이미지를 불러오지 못하면 카테고리 아이콘 패널로 자동 대체됩니다.

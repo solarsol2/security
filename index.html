@@ -76,31 +76,33 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="container hero__grid">
         <div class="hero__copy">
-          <p class="eyebrow eyebrow--light">Everyday Safety Store</p>
+          <p class="hero__kicker"><span class="hero__dot" aria-hidden="true"></span>Everyday Safety Store</p>
           <h1 id="hero-title" class="hero__title">당신의 일상을 지키는<br><span class="hero__accent">가장 완벽한 솔루션</span></h1>
-          <p class="hero__lead">해외에서 검증된 생활 안전용품을 직접 써보고 골랐습니다.<br class="br-desktop"> 현지에서 검수한 뒤 문 앞까지 보내드립니다.</p>
+          <p class="hero__lead">해외에서 검증된 생활 안전용품을 직접 써보고 골랐습니다. 현지에서 검수한 뒤 문 앞까지 보내드립니다.</p>
           <div class="hero__cta">
-            <a class="btn btn--accent btn--lg" href="#products">베스트 상품 보기 <svg class="icon" aria-hidden="true"><use href="#i-arrowRight"></use></svg></a>
-            <button type="button" class="btn btn--ghost-light btn--lg" data-quote-open>맞춤 견적 받기</button>
+            <a class="btn btn--primary btn--lg" href="#products">베스트 상품 보기 <svg class="icon" aria-hidden="true"><use href="#i-arrowRight"></use></svg></a>
+            <button type="button" class="btn btn--outline btn--lg" data-quote-open>맞춤 견적 받기</button>
           </div>
-          <dl class="hero__facts">
-            <div><dt>평균 도착</dt><dd>7–12<small>일</small></dd></div>
-            <div><dt>출고 전 검수</dt><dd>100<small>%</small></dd></div>
-            <div><dt>무료배송 기준</dt><dd>3<small>만원</small></dd></div>
-          </dl>
         </div>
+
         <figure class="hero__visual">
-          <div class="media media--hero">
-            <img src="https://unsplash.com/photos/a6DU2amwBnI/download?force=true&w=1100" alt="밤거리를 걷는 사람" data-fallback-icon="shield" fetchpriority="high">
+          <div class="hero__stage">
+            <span class="hero__fig">Fig. 01 — Wall-mounted Camera</span>
+            <!-- 교체: 벽면 설치형 CCTV 누끼 PNG(투명 배경), 정면 3/4 각도, 그림자 없음 -->
+            <img class="hero__product" src="https://placehold.co/880x880/E3E8E2/4F6155/png?text=Wall-mounted+CCTV+Camera%5Cn(Cutout,+Transparent+PNG)" width="880" height="880" alt="벽면에 설치된 모던한 CCTV 카메라" fetchpriority="high" data-fallback-icon="shield">
+            <ul class="hero__specs" aria-label="KCOP 기준">
+              <li><span>검수</span>작동·외관·구성품 3단계</li>
+              <li><span>통관</span>목록통관 대행</li>
+            </ul>
           </div>
-          <figcaption class="hero__card">
-            <span class="hero__card-icon"><svg class="icon" aria-hidden="true"><use href="#i-scan"></use></svg></span>
-            <span>
-              <strong>현지 검수 후 출고</strong>
-              작동·외관·구성품을 하나씩 확인합니다
-            </span>
-          </figcaption>
         </figure>
+
+        <dl class="hero__facts">
+          <div><dt>평균 도착</dt><dd>7–12<small>일</small></dd></div>
+          <div><dt>출고 전 검수</dt><dd>100<small>%</small></dd></div>
+          <div><dt>무료배송</dt><dd>3<small>만원 이상</small></dd></div>
+          <div><dt>상담 시간</dt><dd>10–17<small>시 · 평일</small></dd></div>
+        </dl>
       </div>
     </section>
 
@@ -126,46 +128,60 @@
       </div>
     </section>
 
-    <!-- Situations -->
-    <section class="section" aria-labelledby="situation-title">
+    <!-- Categories -->
+    <section class="section" aria-labelledby="category-title">
       <div class="container">
         <header class="section-head" data-reveal>
-          <p class="section-head__index">01 — Situation</p>
+          <p class="section-head__index">01 — Category</p>
           <div class="section-head__main">
-            <h2 id="situation-title" class="section-head__title">불안한 순간은 대개<br>익숙한 곳에서 찾아옵니다</h2>
-            <p class="section-head__desc">혼자 사는 집, 늦은 귀갓길, 처음 묵는 숙소. 상황에 맞춰 꼭 필요한 것만 골라두었습니다.</p>
+            <h2 id="category-title" class="section-head__title">불안한 순간은 대개<br>익숙한 곳에서 찾아옵니다</h2>
+            <p class="section-head__desc">혼자 사는 집, 늦은 귀갓길, 처음 묵는 숙소. 상황별로 꼭 필요한 것만 골라두었습니다.</p>
           </div>
         </header>
 
-        <div class="situations">
-          <a class="situation" href="index.html?cat=home#products" data-cat-link="home" data-reveal>
-            <div class="media situation__media">
-              <img src="https://unsplash.com/photos/fvoGQce1GTs/download?force=true&w=800" alt="현관문 손잡이" loading="lazy" data-fallback-icon="door">
+        <div class="cat-grid">
+          <a class="cat-card" href="index.html?cat=walk#products" data-cat-link="walk" data-reveal>
+            <div class="media cat-card__media">
+              <img src="https://placehold.co/800x600/E3E8E2/4F6155/png?text=Personal+Safety+Alarm+Keychain%5Cn(on+Bag+Strap)" width="800" height="600" alt="가방 끈에 걸린 개인 안심 경보기 키링" loading="lazy" data-fallback-icon="shield">
             </div>
-            <div class="situation__body">
-              <p class="situation__label">혼자 사는 집</p>
-              <h3 class="situation__title">현관과 창문부터<br>한 겹 더 단단하게</h3>
-              <span class="link-arrow">관련 상품 보기 <svg class="icon" aria-hidden="true"><use href="#i-arrowRight"></use></svg></span>
-            </div>
-          </a>
-          <a class="situation" href="index.html?cat=walk#products" data-cat-link="walk" data-reveal>
-            <div class="media situation__media">
-              <img src="https://unsplash.com/photos/9zQgfrzZCbA/download?force=true&w=800" alt="밤길을 걷는 사람" loading="lazy" data-fallback-icon="bell">
-            </div>
-            <div class="situation__body">
-              <p class="situation__label">늦은 귀갓길</p>
-              <h3 class="situation__title">손이 닿는 곳에<br>소리를 준비해 두세요</h3>
-              <span class="link-arrow">관련 상품 보기 <svg class="icon" aria-hidden="true"><use href="#i-arrowRight"></use></svg></span>
+            <div class="cat-card__body">
+              <span class="cat-card__num">01</span>
+              <h3 class="cat-card__title">호신·귀갓길</h3>
+              <p class="cat-card__desc">핀 하나로 울리는 경보기, 전기 없이 쓰는 호루라기</p>
+              <span class="link-arrow">상품 보기 <svg class="icon" aria-hidden="true"><use href="#i-arrowRight"></use></svg></span>
             </div>
           </a>
-          <a class="situation" href="index.html?cat=travel#products" data-cat-link="travel" data-reveal>
-            <div class="media situation__media">
-              <img src="https://unsplash.com/photos/G9neENK1Z5I/download?force=true&w=800" alt="호텔 복도" loading="lazy" data-fallback-icon="luggage">
+          <a class="cat-card" href="index.html?cat=home#products" data-cat-link="home" data-reveal>
+            <div class="media cat-card__media">
+              <img src="https://placehold.co/800x600/E3E8E2/4F6155/png?text=Door+Open+Sensor+Alarm%5Cn(Mounted+on+Front+Door)" width="800" height="600" alt="현관문에 부착된 문열림 감지 센서" loading="lazy" data-fallback-icon="shield">
             </div>
-            <div class="situation__body">
-              <p class="situation__label">출장·여행 숙소</p>
-              <h3 class="situation__title">체크인 후 3분,<br>방 안부터 점검합니다</h3>
-              <span class="link-arrow">관련 상품 보기 <svg class="icon" aria-hidden="true"><use href="#i-arrowRight"></use></svg></span>
+            <div class="cat-card__body">
+              <span class="cat-card__num">02</span>
+              <h3 class="cat-card__title">현관·창문</h3>
+              <p class="cat-card__desc">문틈 경보 스토퍼와 문열림 감지 센서</p>
+              <span class="link-arrow">상품 보기 <svg class="icon" aria-hidden="true"><use href="#i-arrowRight"></use></svg></span>
+            </div>
+          </a>
+          <a class="cat-card" href="index.html?cat=travel#products" data-cat-link="travel" data-reveal>
+            <div class="media cat-card__media">
+              <img src="https://placehold.co/800x600/E3E8E2/4F6155/png?text=Portable+Travel+Door+Lock%5Cn(Installed+on+Hotel+Door)" width="800" height="600" alt="호텔 객실 문에 설치된 휴대용 보조 잠금장치" loading="lazy" data-fallback-icon="shield">
+            </div>
+            <div class="cat-card__body">
+              <span class="cat-card__num">03</span>
+              <h3 class="cat-card__title">여행·숙소</h3>
+              <p class="cat-card__desc">숙소 문을 한 번 더 잠그는 휴대용 잠금장치</p>
+              <span class="link-arrow">상품 보기 <svg class="icon" aria-hidden="true"><use href="#i-arrowRight"></use></svg></span>
+            </div>
+          </a>
+          <a class="cat-card" href="index.html?cat=privacy#products" data-cat-link="privacy" data-reveal>
+            <div class="media cat-card__media">
+              <img src="https://placehold.co/800x600/E3E8E2/4F6155/png?text=Hidden+Camera+Detector%5Cn(Hand-held,+Close-up)" width="800" height="600" alt="손에 든 몰래카메라 탐지기 클로즈업" loading="lazy" data-fallback-icon="shield">
+            </div>
+            <div class="cat-card__body">
+              <span class="cat-card__num">04</span>
+              <h3 class="cat-card__title">프라이버시</h3>
+              <p class="cat-card__desc">몰래카메라 탐지기와 RFID 차단 지갑</p>
+              <span class="link-arrow">상품 보기 <svg class="icon" aria-hidden="true"><use href="#i-arrowRight"></use></svg></span>
             </div>
           </a>
         </div>
@@ -173,7 +189,7 @@
     </section>
 
     <!-- Products -->
-    <section class="section section--gray" id="products" aria-labelledby="products-title">
+    <section class="section section--paper" id="products" aria-labelledby="products-title">
       <div class="container">
         <header class="section-head" data-reveal>
           <p class="section-head__index">02 — Products</p>
@@ -237,32 +253,43 @@
       </div>
     </section>
 
-    <!-- Principles -->
-    <section class="section section--gray" aria-labelledby="principle-title">
-      <div class="container">
-        <header class="section-head" data-reveal>
-          <p class="section-head__index">04 — Principle</p>
-          <div class="section-head__main">
-            <h2 id="principle-title" class="section-head__title">안전용품이니까,<br>파는 방식도 정직해야 합니다</h2>
+    <!-- Trust -->
+    <section class="section section--sage" aria-labelledby="trust-title">
+      <div class="container trust">
+        <div class="trust__visual" data-reveal>
+          <div class="media trust__main">
+            <!-- 교체: 물류 관제실 — 다중 모니터로 배송 현황을 확인하는 요원, 측면 구도 -->
+            <img src="https://placehold.co/960x1200/1E293B/9CAF9F/png?text=Logistics+Control+Room%5CnOperator+Monitoring+Shipments" width="960" height="1200" alt="물류 관제실에서 배송 현황을 모니터링하는 담당자" loading="lazy" data-fallback-icon="headset">
           </div>
-        </header>
+          <div class="media trust__inset">
+            <!-- 교체: 국내 배송 출발 차량(탑차) 측면, 로고 없음 -->
+            <img src="https://placehold.co/640x420/E3E8E2/4F6155/png?text=Delivery+Van%5CnReady+for+Dispatch" width="640" height="420" alt="배송 출발을 준비하는 차량" loading="lazy" data-fallback-icon="truck">
+          </div>
+        </div>
 
-        <div class="principles">
-          <article class="principle" data-reveal>
-            <span class="principle__icon"><svg class="icon" aria-hidden="true"><use href="#i-scan"></use></svg></span>
-            <h3 class="principle__title">직접 써보고 고릅니다</h3>
-            <p class="principle__text">샘플을 먼저 들여와 소리 크기, 마감, 내구성을 확인합니다. 기준에 못 미치는 상품은 아무리 잘 팔려도 올리지 않습니다.</p>
-          </article>
-          <article class="principle" data-reveal>
-            <span class="principle__icon"><svg class="icon" aria-hidden="true"><use href="#i-info"></use></svg></span>
-            <h3 class="principle__title">과장 없이 설명합니다</h3>
-            <p class="principle__text">맞지 않는 문, 탐지하지 못하는 장비처럼 한계도 상세 페이지에 그대로 적습니다. 모르고 사는 일이 없도록.</p>
-          </article>
-          <article class="principle" data-reveal>
-            <span class="principle__icon"><svg class="icon" aria-hidden="true"><use href="#i-refresh"></use></svg></span>
-            <h3 class="principle__title">문제가 생기면 끝까지</h3>
-            <p class="principle__text">불량이나 오배송은 회수 없이 새 상품을 다시 보내드립니다. 해외 판매처와의 분쟁은 저희가 처리합니다.</p>
-          </article>
+        <div class="trust__copy">
+          <header data-reveal>
+            <p class="section-head__index">04 — Principle</p>
+            <h2 id="trust-title" class="section-head__title">안전용품이니까,<br>파는 방식도 정직해야 합니다</h2>
+            <p class="section-head__desc">주문이 들어온 순간부터 문 앞에 도착할 때까지, 모든 단계를 저희가 직접 확인합니다.</p>
+          </header>
+          <ol class="trust__list">
+            <li class="trust__item" data-reveal>
+              <span class="trust__num">01</span>
+              <div><h3 class="trust__title">직접 써보고 고릅니다</h3>
+              <p class="trust__text">샘플을 먼저 들여와 소리 크기, 마감, 내구성을 확인합니다. 기준에 못 미치는 상품은 아무리 잘 팔려도 올리지 않습니다.</p></div>
+            </li>
+            <li class="trust__item" data-reveal>
+              <span class="trust__num">02</span>
+              <div><h3 class="trust__title">배송 전 과정을 지켜봅니다</h3>
+              <p class="trust__text">현지 입고부터 통관, 국내 출고까지 물류 현황을 매일 확인하고, 지연이 생기면 먼저 연락드립니다.</p></div>
+            </li>
+            <li class="trust__item" data-reveal>
+              <span class="trust__num">03</span>
+              <div><h3 class="trust__title">문제가 생기면 끝까지</h3>
+              <p class="trust__text">불량이나 오배송은 회수 없이 새 상품을 다시 보내드립니다. 해외 판매처와의 분쟁은 저희가 처리합니다.</p></div>
+            </li>
+          </ol>
         </div>
       </div>
     </section>
@@ -367,7 +394,7 @@
           <li><a href="#" data-doc="business">사업자 정보</a></li>
         </ul>
         <p class="footer__info">상호 KCOP · 대표 홍길동 · 사업자등록번호 000-00-00000 · 통신판매업신고 제2026-서울마포-0000호<br>KCOP은 해외구매대행 사업자로, 상품의 해외 판매처와 별개입니다.</p>
-        <p class="footer__copy">© 2026 KCOP. Photos via <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>.</p>
+        <p class="footer__copy">© 2026 KCOP. All rights reserved.</p>
       </div>
     </div>
   </footer>
