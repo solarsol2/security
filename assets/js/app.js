@@ -109,13 +109,16 @@
     span.innerHTML = KCOP.icon(img.dataset.fallbackIcon || 'shield');
     box.appendChild(span);
   }
+  // 실패 이벤트는 스크립트 실행 즉시 구독 (지연 로딩 이미지도 실제 error 이벤트로만 판단)
+  document.addEventListener('error', function (e) {
+    var t = e.target;
+    if (t && t.tagName === 'IMG' && t.hasAttribute('data-fallback-icon')) applyFallback(t);
+  }, true);
   function watchImages() {
-    document.addEventListener('error', function (e) {
-      var t = e.target;
-      if (t && t.tagName === 'IMG' && t.hasAttribute('data-fallback-icon')) applyFallback(t);
-    }, true);
-    document.querySelectorAll('img[data-fallback-icon]').forEach(function (img) {
-      if (img.complete && img.naturalWidth === 0) applyFallback(img);
+    // 스크립트보다 먼저 실패한 즉시 로딩 이미지만 보정.
+    // loading="lazy" 이미지는 Safari 등에서 로딩 전에도 complete=true를 반환하므로 제외
+    document.querySelectorAll('img[data-fallback-icon]:not([loading="lazy"])').forEach(function (img) {
+      if (img.complete && img.naturalWidth === 0 && img.currentSrc) applyFallback(img);
     });
   }
 

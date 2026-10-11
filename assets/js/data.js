@@ -19,6 +19,7 @@ window.KCOP_DATA = (function () {
       price: 12900,
       listPrice: 16900,
       img: '130dB Personal Safety Alarm Keychain\n(Product Shot, White BG)',
+      imgSrc: 'assets/img/06-p01-alarm.webp',
       keywords: '경보기 키링 호신 귀갓길 사이렌 알람',
       summary: '핀을 당기는 순간 130dB 경보음과 LED가 함께 켜집니다. 가방이나 열쇠고리에 걸어두는 귀갓길 필수품.',
       features: [
@@ -45,6 +46,7 @@ window.KCOP_DATA = (function () {
       price: 6900,
       listPrice: 8900,
       img: 'Stainless Steel Safety Whistle x2\n(Product Shot, White BG)',
+      imgSrc: 'assets/img/07-p02-whistle.webp',
       keywords: '호루라기 휘슬 등산 비상',
       summary: '배터리도, 충전도 필요 없습니다. 숨이 차도 멀리까지 울리는 고음역 비상용 호루라기.',
       features: [
@@ -70,6 +72,7 @@ window.KCOP_DATA = (function () {
       price: 9900,
       listPrice: 12900,
       img: 'Door Stopper Alarm\n(Wedged Under Door, Close-up)',
+      imgSrc: 'assets/img/08-p03-doorstop.webp',
       keywords: '도어스토퍼 도어 스토퍼 문 고정 알람 경보 자취',
       summary: '문 아래 틈에 끼워두면 문이 밀릴 때 경보가 울리고, 쐐기 구조가 문을 한 번 더 붙잡습니다.',
       features: [
@@ -95,6 +98,7 @@ window.KCOP_DATA = (function () {
       price: 14900,
       listPrice: null,
       img: 'Portable Travel Door Lock\n(Product Shot + Pouch)',
+      imgSrc: 'assets/img/09-p04-travel-lock.webp',
       keywords: '보조 잠금 휴대용 도어락 숙소 호텔 여행',
       summary: '공구 없이 10초면 설치합니다. 숙소 문에 끼워두면 바깥에서 카드키로 열어도 문이 열리지 않습니다.',
       features: [
@@ -122,6 +126,7 @@ window.KCOP_DATA = (function () {
       price: 24900,
       listPrice: 29900,
       img: 'Hidden Camera Detector\n(Product Shot, Viewfinder Visible)',
+      imgSrc: 'assets/img/10-p05-detector.webp',
       keywords: '몰래카메라 몰카 탐지기 숙소 화장실 렌즈',
       summary: '렌즈 반사광 탐지와 무선 신호 감지를 한 기기로. 숙소 체크인 후 3분이면 방 전체를 점검합니다.',
       features: [
