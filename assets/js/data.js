@@ -1,5 +1,5 @@
 /* KCOP 상품·카테고리 데이터
- * img: 들어가야 할 제품 사진 설명 (placehold.co 텍스트). 실제 촬영본이 생기면 imgSrc에 경로를 넣으면 우선 사용됩니다.
+ * img: 상품 사진 경로 (assets/img, 1:1 비율)
  */
 window.KCOP_DATA = (function () {
   var categories = [
@@ -18,8 +18,7 @@ window.KCOP_DATA = (function () {
       badge: 'BEST',
       price: 12900,
       listPrice: 16900,
-      img: '130dB Personal Safety Alarm Keychain\n(Product Shot, White BG)',
-      imgSrc: 'assets/img/06-p01-alarm.webp',
+      img: 'assets/img/06-p01-alarm.webp',
       keywords: '경보기 키링 호신 귀갓길 사이렌 알람',
       summary: '핀을 당기는 순간 130dB 경보음과 LED가 함께 켜집니다. 가방이나 열쇠고리에 걸어두는 귀갓길 필수품.',
       features: [
@@ -45,8 +44,7 @@ window.KCOP_DATA = (function () {
       badge: null,
       price: 6900,
       listPrice: 8900,
-      img: 'Stainless Steel Safety Whistle x2\n(Product Shot, White BG)',
-      imgSrc: 'assets/img/07-p02-whistle.webp',
+      img: 'assets/img/07-p02-whistle.webp',
       keywords: '호루라기 휘슬 등산 비상',
       summary: '배터리도, 충전도 필요 없습니다. 숨이 차도 멀리까지 울리는 고음역 비상용 호루라기.',
       features: [
@@ -71,8 +69,7 @@ window.KCOP_DATA = (function () {
       badge: 'BEST',
       price: 9900,
       listPrice: 12900,
-      img: 'Door Stopper Alarm\n(Wedged Under Door, Close-up)',
-      imgSrc: 'assets/img/08-p03-doorstop.webp',
+      img: 'assets/img/08-p03-doorstop.webp',
       keywords: '도어스토퍼 도어 스토퍼 문 고정 알람 경보 자취',
       summary: '문 아래 틈에 끼워두면 문이 밀릴 때 경보가 울리고, 쐐기 구조가 문을 한 번 더 붙잡습니다.',
       features: [
@@ -97,8 +94,7 @@ window.KCOP_DATA = (function () {
       badge: 'NEW',
       price: 14900,
       listPrice: null,
-      img: 'Portable Travel Door Lock\n(Product Shot + Pouch)',
-      imgSrc: 'assets/img/09-p04-travel-lock.webp',
+      img: 'assets/img/09-p04-travel-lock.webp',
       keywords: '보조 잠금 휴대용 도어락 숙소 호텔 여행',
       summary: '공구 없이 10초면 설치합니다. 숙소 문에 끼워두면 바깥에서 카드키로 열어도 문이 열리지 않습니다.',
       features: [
@@ -125,8 +121,7 @@ window.KCOP_DATA = (function () {
       badge: null,
       price: 24900,
       listPrice: 29900,
-      img: 'Hidden Camera Detector\n(Product Shot, Viewfinder Visible)',
-      imgSrc: 'assets/img/10-p05-detector.webp',
+      img: 'assets/img/10-p05-detector.webp',
       keywords: '몰래카메라 몰카 탐지기 숙소 화장실 렌즈',
       summary: '렌즈 반사광 탐지와 무선 신호 감지를 한 기기로. 숙소 체크인 후 3분이면 방 전체를 점검합니다.',
       features: [
@@ -153,8 +148,7 @@ window.KCOP_DATA = (function () {
       badge: null,
       price: 15900,
       listPrice: 19900,
-      img: 'Wireless Door/Window Sensor Alarm x2\n(Product Shot)',
-      imgSrc: 'assets/img/11-p06-sensor.webp',
+      img: 'assets/img/11-p06-sensor.webp',
       keywords: '문열림 감지 센서 경보 창문 현관 서랍 자석',
       summary: '자석이 떨어지는 순간 바로 알립니다. 현관, 창문, 서랍 어디든 양면테이프로 3초 설치.',
       features: [
@@ -179,8 +173,7 @@ window.KCOP_DATA = (function () {
       badge: null,
       price: 18900,
       listPrice: 22900,
-      img: 'RFID Blocking Card Wallet\n(Open, Cards Inside)',
-      imgSrc: 'assets/img/12-p07-wallet.webp',
+      img: 'assets/img/12-p07-wallet.webp',
       keywords: 'RFID 카드지갑 스키밍 차단 교통카드',
       summary: '교통카드 겹침 오류를 없애고, 비접촉 결제 카드의 정보를 무단 판독(스키밍)으로부터 지킵니다.',
       features: [
@@ -204,8 +197,7 @@ window.KCOP_DATA = (function () {
       badge: null,
       price: 19900,
       listPrice: 24900,
-      img: 'Dummy CCTV Camera\n+ Warning Sticker Set',
-      imgSrc: 'assets/img/13-p08-dummy-cctv.webp',
+      img: 'assets/img/13-p08-dummy-cctv.webp',
       keywords: '모형 CCTV 가짜 카메라 더미 경고 스티커 방범',
       summary: '실제 카메라와 같은 외형과 깜빡이는 LED로 침입을 망설이게 합니다. 경고 스티커 4매 포함.',
       features: [

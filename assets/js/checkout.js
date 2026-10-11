@@ -41,7 +41,6 @@ document.addEventListener('kcop:ready', function () {
   }
 
   function renderForm() {
-    var u = KCOP.user;
     root.innerHTML =
       '<div class="container">' +
         '<div class="page-head"><h1 class="page-head__title">주문/결제</h1>' + steps(2) + '</div>' +
@@ -50,24 +49,24 @@ document.addEventListener('kcop:ready', function () {
             '<fieldset class="fieldset"><legend class="fieldset__title">주문자 정보</legend><div class="form form--grid">' +
               '<div class="field"><label class="field__label" for="o-name">이름</label><input class="field__input" id="o-name" name="name" required autocomplete="name" placeholder="홍길동"><p class="field__error"></p></div>' +
               '<div class="field"><label class="field__label" for="o-phone">휴대폰 번호</label><input class="field__input" id="o-phone" name="phone" type="tel" required data-phone autocomplete="tel" placeholder="010-0000-0000"><p class="field__error"></p></div>' +
-              '<div class="field field--full"><label class="field__label" for="o-email">이메일</label><input class="field__input" id="o-email" name="email" type="email" required autocomplete="email" placeholder="주문·배송 안내를 받을 이메일" value="' + (u ? esc(u.email) : '') + '"><p class="field__error"></p></div>' +
+              '<div class="field field--full"><label class="field__label" for="o-email">이메일</label><input class="field__input" id="o-email" name="email" type="email" required autocomplete="email" placeholder="주문·배송 안내를 받을 이메일"><p class="field__error"></p></div>' +
             '</div></fieldset>' +
 
             '<fieldset class="fieldset"><legend class="fieldset__title">배송지</legend><div class="form form--grid">' +
               '<div class="field field--full"><label class="field__label" for="o-zip">주소</label>' +
-                '<div class="addr-row"><input class="field__input" id="o-zip" name="zip" required readonly placeholder="우편번호" data-zip>' +
+                '<div class="addr-row"><input class="field__input" id="o-zip" name="zip" required readonly placeholder="우편번호">' +
                 '<button type="button" class="btn btn--outline" data-postcode>주소 검색</button></div><p class="field__error"></p></div>' +
-              '<div class="field field--full"><input class="field__input" name="addr1" required readonly placeholder="기본 주소" aria-label="기본 주소" data-addr1><p class="field__error"></p></div>' +
-              '<div class="field field--full"><input class="field__input" name="addr2" placeholder="상세 주소 (동·호수)" aria-label="상세 주소" data-addr2></div>' +
+              '<div class="field field--full"><input class="field__input" name="addr1" required readonly placeholder="기본 주소" aria-label="기본 주소"><p class="field__error"></p></div>' +
+              '<div class="field field--full"><input class="field__input" name="addr2" placeholder="상세 주소 (동·호수)" aria-label="상세 주소"></div>' +
               '<div class="field field--full"><label class="field__label" for="o-memo">배송 요청사항 <span class="field__optional">선택</span></label>' +
                 '<select class="field__input" id="o-memo" name="memo"><option>문 앞에 놓아주세요</option><option>경비실에 맡겨주세요</option><option>배송 전 연락 바랍니다</option><option>택배함에 넣어주세요</option></select></div>' +
             '</div></fieldset>' +
 
             '<fieldset class="fieldset"><legend class="fieldset__title">통관 정보 <small>해외구매대행 필수</small></legend><div class="form">' +
               '<div class="field"><label class="field__label" for="o-pccc">개인통관고유부호</label>' +
-                '<input class="field__input" id="o-pccc" name="pccc" required data-pccc maxlength="13" placeholder="P로 시작하는 13자리" autocomplete="off" style="text-transform:uppercase">' +
+                '<input class="field__input" id="o-pccc" name="pccc" required data-pccc maxlength="13" placeholder="P로 시작하는 13자리" autocomplete="off" spellcheck="false">' +
                 '<p class="field__error"></p>' +
-                '<p class="field__help">주문자 이름과 부호의 명의가 같아야 통관이 지연되지 않습니다. <a href="https://unipass.customs.go.kr/csp/persIndex.do" target="_blank" rel="noopener" style="text-decoration:underline">발급·조회하기</a></p></div>' +
+                '<p class="field__help">주문자 이름과 부호의 명의가 같아야 통관이 지연되지 않습니다. <a href="https://unipass.customs.go.kr/csp/persIndex.do" target="_blank" rel="noopener">발급·조회하기</a></p></div>' +
             '</div></fieldset>' +
 
             '<fieldset class="fieldset"><legend class="fieldset__title">결제 수단</legend>' +
@@ -90,7 +89,7 @@ document.addEventListener('kcop:ready', function () {
               '<p class="field__error" data-check-error></p>' +
             '</div>' +
             '<button type="submit" class="btn btn--primary btn--block btn--lg">' + KCOP.won(cart.total()) + ' 결제하기</button>' +
-            '<p class="form__note" style="margin-top:12px">포트폴리오 데모로, 실제 결제는 진행되지 않습니다.</p>' +
+            '<p class="form__note order-box__note">포트폴리오 데모로, 실제 결제는 진행되지 않습니다.</p>' +
           '</div></aside>' +
         '</form>' +
       '</div>';
@@ -158,13 +157,13 @@ document.addEventListener('kcop:ready', function () {
         '<h1 class="complete__title">주문이 완료되었습니다</h1>' +
         '<p class="complete__text">' + esc(form.name.value) + '님, 해외 판매처에 발주를 시작했습니다.<br>배송 단계가 바뀔 때마다 ' + esc(form.phone.value) + '로 알려드립니다.</p>' +
         '<div class="order-box complete__box">' +
-          '<dl class="pdp__meta" style="padding-top:0">' +
+          '<dl class="pdp__meta complete__meta">' +
             '<div><dt>주문번호</dt><dd><strong>' + no + '</strong></dd></div>' +
             '<div><dt>도착 예정</dt><dd><strong>' + KCOP.arrivalRange() + '</strong></dd></div>' +
             '<div><dt>배송지</dt><dd>' + esc(addr) + '</dd></div>' +
             '<div><dt>결제 수단</dt><dd>' + esc(pay) + ' · ' + KCOP.won(total) + '</dd></div>' +
           '</dl>' +
-          '<div style="margin-top:20px">' + lines(snapshot) + '</div>' +
+          '<div class="complete__lines">' + lines(snapshot) + '</div>' +
         '</div>' +
         '<div class="complete__actions"><a class="btn btn--primary btn--lg" href="index.html">홈으로</a>' +
         '<a class="btn btn--outline btn--lg" href="index.html#products">쇼핑 계속하기</a></div>' +
@@ -174,8 +173,21 @@ document.addEventListener('kcop:ready', function () {
   }
 
   if (cart.items.length) renderForm(); else renderEmpty();
+  // 결제 화면에서 장바구니를 수정하면 다시 그리되, 입력 중인 값은 유지 (완료 화면은 그대로)
   document.addEventListener('cart:change', function () {
-    // 결제 화면에서 장바구니를 수정하면 요약을 다시 그림 (완료 화면은 유지)
-    if (root.querySelector('[data-order-form]')) { if (cart.items.length) renderForm(); else renderEmpty(); }
+    var form = root.querySelector('[data-order-form]');
+    if (!form) return;
+    if (!cart.items.length) return renderEmpty();
+    var values = {};
+    Array.prototype.forEach.call(form.elements, function (el) {
+      if (el.name && el.type !== 'checkbox') values[el.name] = el.type === 'radio' ? (el.checked ? el.value : values[el.name]) : el.value;
+    });
+    renderForm();
+    var next = root.querySelector('[data-order-form]');
+    Object.keys(values).forEach(function (name) {
+      var el = next.elements[name];
+      if (!el || values[name] === undefined) return;
+      el.value = values[name];
+    });
   });
 });

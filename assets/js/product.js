@@ -56,7 +56,7 @@ document.addEventListener('kcop:ready', function () {
           '</dl>' +
           (p.notice ? '<p class="pdp__notice">' + I('info') + '<span>' + esc(p.notice) + '</span></p>' : '') +
           optionsHtml +
-          '<div class="pdp__qty"><span class="option-group__label" style="margin:0">수량</span>' +
+          '<div class="pdp__qty"><span class="option-group__label option-group__label--inline">수량</span>' +
             '<div class="stepper"><button type="button" data-step="-1" aria-label="수량 줄이기" disabled>' + I('minus') + '</button>' +
             '<input type="text" inputmode="numeric" value="1" aria-label="수량" data-qty>' +
             '<button type="button" data-step="1" aria-label="수량 늘리기">' + I('plus') + '</button></div></div>' +

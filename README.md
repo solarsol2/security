@@ -32,7 +32,7 @@ Settings → Pages → Branch를 이 브랜치 / `root`로 지정하면 됩니�
 
 ## 이미지
 모든 사진은 `assets/img/`에 WebP로 들어 있습니다 (01 Hero · 02–05 카테고리 · 06–13 상품 · 14–15 신뢰도 섹션).
-상품 사진은 `assets/js/data.js`의 `imgSrc`로 연결되며, 이 값이 없으면 `img` 설명이 적힌 placehold.co 이미지가 대신 표시됩니다.
+상품 사진은 `assets/js/data.js`의 각 상품 `img` 경로로 연결됩니다.
 이미지를 불러오지 못하면 카테고리 아이콘 패널로 자동 대체됩니다.
 
 ## 로고

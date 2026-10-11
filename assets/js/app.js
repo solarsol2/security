@@ -9,7 +9,6 @@
   var ICONS = {
     search: '<circle cx="11" cy="11" r="7.5"/><path d="m20.5 20.5-4.2-4.2"/>',
     bag: '<path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>',
-    user: '<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>',
     menu: '<path d="M4 7h16M4 12h16M4 17h16"/>',
     close: '<path d="M18 6 6 18M6 6l12 12"/>',
     arrowRight: '<path d="M5 12h14M13 6l6 6-6 6"/>',
@@ -19,24 +18,20 @@
     check: '<path d="M20 6 9 17l-5-5"/>',
     chevronDown: '<path d="m6 9 6 6 6-6"/>',
     chevronRight: '<path d="m9 18 6-6-6-6"/>',
-    trash: '<path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>',
     info: '<circle cx="12" cy="12" r="9.5"/><path d="M12 16v-4M12 8h.01"/>',
     truck: '<path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/>',
     shield: '<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/>',
     package: '<path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><path d="m3.3 7 8.7 5 8.7-5"/>',
-    plane: '<path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>',
     scan: '<path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/><circle cx="11.5" cy="11.5" r="3.5"/><path d="m16.5 16.5-2.5-2.5"/>',
     file: '<path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="m9 15 2 2 4-4"/>',
     refresh: '<path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/>',
     headset: '<path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"/><path d="M21 16v2a4 4 0 0 1-4 4h-5"/>',
-    clock: '<circle cx="12" cy="12" r="9.5"/><path d="M12 7v5l3 2"/>',
     phone: '<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>',
     chat: '<path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/>',
     bell: '<path d="M10.27 21a2 2 0 0 0 3.46 0"/><path d="M3.26 15.33A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.67C19.41 13.96 18 12.5 18 8A6 6 0 0 0 6 8c0 4.5-1.41 5.96-2.74 7.33"/>',
     door: '<path d="M13 4h3a2 2 0 0 1 2 2v14"/><path d="M2 20h3M13 20h9M10 12v.01"/><path d="M13 4.56v16.16a1 1 0 0 1-1.24.97L5 20V5.56a2 2 0 0 1 1.52-1.94l4-1A2 2 0 0 1 13 4.56Z"/>',
     luggage: '<path d="M6 20a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2"/><path d="M8 18V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v14"/><path d="M10 20h4"/><circle cx="16" cy="20" r="2"/><circle cx="8" cy="20" r="2"/>',
-    lock: '<rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>',
-    eye: '<path d="M2.06 12.35a1 1 0 0 1 0-.7 10.75 10.75 0 0 1 19.88 0 1 1 0 0 1 0 .7 10.75 10.75 0 0 1-19.88 0"/><circle cx="12" cy="12" r="3"/>'
+    lock: '<rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>'
   };
 
   function injectSprite() {
@@ -54,11 +49,6 @@
 
   /* ---------- Utils ---------- */
   KCOP.won = function (n) { return n.toLocaleString('ko-KR') + '원'; };
-  // 제품 사진 자리 표시 (실사 교체 전까지 사용할 촬영 가이드 텍스트)
-  KCOP.placeholder = function (text, w, h) {
-    return 'https://placehold.co/' + w + 'x' + (h || w) + '/182132/858FA0/png?text=' +
-      encodeURIComponent(text).replace(/%20/g, '+').replace(/%0A/g, '%5Cn');
-  };
   KCOP.getProduct = function (id) {
     return DATA.products.filter(function (p) { return p.id === id; })[0] || null;
   };
@@ -91,9 +81,8 @@
   };
 
   KCOP.media = function (p, w, extraClass) {
-    var src = p.imgSrc || KCOP.placeholder(p.img, w);
     return '<div class="media ' + (extraClass || '') + '">' +
-      '<img src="' + src + '" width="' + w + '" height="' + w + '" alt="' + KCOP.escape(p.name) + '" loading="lazy" decoding="async"' +
+      '<img src="' + p.img + '" width="' + w + '" height="' + w + '" alt="' + KCOP.escape(p.name) + '" loading="lazy" decoding="async"' +
       ' data-fallback-icon="' + KCOP.categoryIcon(p.categories[0]) + '">' +
       '</div>';
   };
@@ -125,7 +114,7 @@
   /* ---------- Product card ---------- */
   KCOP.productCard = function (p) {
     var off = KCOP.discount(p);
-    return '<article class="product-card" data-product-id="' + p.id + '">' +
+    return '<article class="product-card">' +
       '<a class="product-card__link" href="product.html?id=' + p.id + '">' +
         '<div class="product-card__media">' + KCOP.media(p, 640) +
           (p.badge ? '<span class="badge badge--' + p.badge.toLowerCase() + '">' + p.badge + '</span>' : '') +
@@ -246,7 +235,7 @@
 
     return '' +
     /* Cart drawer */
-    '<div class="layer layer--drawer" data-layer="cart" hidden>' +
+    '<div class="layer" data-layer="cart" hidden>' +
       '<div class="layer__dim" data-close></div>' +
       '<aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title">' +
         '<header class="drawer__head"><h2 id="cart-title" class="drawer__title">장바구니 <span data-cart-count-label></span></h2>' +
@@ -258,7 +247,7 @@
     '</div>' +
 
     /* Search */
-    '<div class="layer layer--search" data-layer="search" hidden>' +
+    '<div class="layer" data-layer="search" hidden>' +
       '<div class="layer__dim" data-close></div>' +
       '<div class="search-panel" role="dialog" aria-modal="true" aria-label="상품 검색">' +
         '<div class="container">' +
@@ -308,7 +297,7 @@
             '<div class="field"><label class="field__label" for="q-phone">연락처</label><input class="field__input" id="q-phone" name="phone" type="tel" required placeholder="010-0000-0000" data-phone><p class="field__error"></p></div>' +
             '<div class="field"><label class="field__label" for="q-qty">예상 수량</label><select class="field__input" id="q-qty" name="qty" required><option value="">선택</option><option>20–49개</option><option>50–99개</option><option>100–299개</option><option>300개 이상</option></select><p class="field__error"></p></div>' +
             '<div class="field field--full"><label class="field__label" for="q-item">관심 상품</label><select class="field__input" id="q-item" name="item">' +
-              DATA.products.map(function (p) { return '<option>' + p.name + '</option>'; }).join('') +
+              DATA.products.map(function (p) { return '<option>' + KCOP.escape(p.name) + '</option>'; }).join('') +
               '<option>여러 상품 / 상담 후 결정</option></select></div>' +
             '<div class="field field--full"><label class="field__label" for="q-memo">요청 사항 <span class="field__optional">선택</span></label><textarea class="field__input" id="q-memo" name="memo" rows="3" placeholder="납품 희망일, 포장 방식, 로고 각인 등"></textarea></div>' +
             '<button type="submit" class="btn btn--primary btn--block field--full">견적 요청하기</button>' +
@@ -320,7 +309,7 @@
     /* Policy docs */
     '<div class="layer layer--modal" data-layer="doc" hidden>' +
       '<div class="layer__dim" data-close></div>' +
-      '<div class="modal modal--wide modal--doc" role="dialog" aria-modal="true" aria-labelledby="doc-title">' +
+      '<div class="modal modal--wide" role="dialog" aria-modal="true" aria-labelledby="doc-title">' +
         '<button type="button" class="icon-btn modal__close" data-close aria-label="닫기">' + KCOP.icon('close') + '</button>' +
         '<div data-doc-body></div>' +
       '</div>' +
@@ -348,7 +337,7 @@
     business: {
       title: '사업자 정보',
       body: '<dl class="doc-list"><dt>상호</dt><dd>KCOP</dd><dt>대표</dt><dd>홍길동</dd><dt>사업자등록번호</dt><dd>000-00-00000</dd>' +
-        '<dt>통신판매업 신고</dt><dd>제2026-서울마포-0000호</dd><dt>주소</dt><dd>서울특별시 마포구 월드컵북로 00, 0층</dd><dt>개인정보보호책임자</dt><dd>홍길동 (privacy@kcop.kr)</dd></dl>' +
+        '<dt>통신판매업 신고</dt><dd>제2026-서울마포-0000호</dd><dt>주소</dt><dd>서울특별시 마포구 월드컵북로 00, 0층</dd><dt>개인정보보호책임자</dt><dd>홍길동 (privacy@kcop.example)</dd></dl>' +
         '<p class="form__note">포트폴리오용 데모 사이트로, 표시된 사업자 정보는 예시입니다.</p>'
     }
   };
@@ -445,8 +434,19 @@
     }).join('') : '<li class="search-panel__empty">검색 결과가 없습니다. 다른 단어로 찾아보세요.</li>';
   }
 
-  /* ---------- Auth (demo) ---------- */
-  KCOP.user = load('kcop.user', null);
+  /* ---------- Auth (demo) ----------
+   * 이메일·비밀번호는 어디에도 저장하지 않고, 표시용 이름만 sessionStorage에 둠 (탭 종료 시 삭제) */
+  function loadSession() {
+    try { return JSON.parse(sessionStorage.getItem('kcop.user')); } catch (e) { return null; }
+  }
+  function saveSession(user) {
+    try {
+      if (user) sessionStorage.setItem('kcop.user', JSON.stringify(user));
+      else sessionStorage.removeItem('kcop.user');
+    } catch (e) { /* storage blocked */ }
+  }
+  try { localStorage.removeItem('kcop.user'); } catch (e) { /* 이전 버전이 남긴 값 정리 */ }
+  KCOP.user = loadSession();
   function renderAuth() {
     document.querySelectorAll('[data-login-open]').forEach(function (b) {
       b.textContent = KCOP.user ? KCOP.user.name + '님' : '로그인';
@@ -550,7 +550,7 @@
       }
       if (t.closest('[data-login-open]')) {
         if (KCOP.user) {
-          KCOP.user = null; save('kcop.user', null); renderAuth();
+          KCOP.user = null; saveSession(null); renderAuth();
           KCOP.toast('로그아웃되었습니다');
         } else KCOP.openLayer('login');
         return;
@@ -592,14 +592,12 @@
     loginForm.addEventListener('submit', function (e) {
       e.preventDefault();
       if (!KCOP.validateForm(loginForm)) return;
-      var email = loginForm.email.value.trim();
-      KCOP.user = { email: email, name: email.split('@')[0] };
-      save('kcop.user', KCOP.user);
+      KCOP.user = { name: loginForm.email.value.trim().split('@')[0] };
+      saveSession(KCOP.user);
+      loginForm.reset();
       renderAuth();
       KCOP.closeLayers();
-      loginForm.reset();
       KCOP.toast(KCOP.escape(KCOP.user.name) + '님, 반갑습니다');
-      document.dispatchEvent(new CustomEvent('auth:change'));
     });
 
     document.addEventListener('submit', function (e) {
@@ -610,8 +608,7 @@
       document.querySelector('[data-quote-body]').innerHTML =
         '<div class="done">' + KCOP.icon('check', 'done__icon') +
         '<h2 class="modal__title">견적 요청이 접수되었습니다</h2>' +
-        '<p class="modal__desc">' + KCOP.escape(form.name.value) + '님, 입력하신 ' + KCOP.escape(form.phone.value) +
-        '로 영업일 기준 1일 안에 연락드리겠습니다.</p>' +
+        '<p class="modal__desc">' + KCOP.escape(form.name.value) + '님, 입력하신 연락처로 영업일 기준 1일 안에 연락드리겠습니다.</p>' +
         '<button type="button" class="btn btn--primary" data-close>확인</button></div>';
     });
 
@@ -637,7 +634,6 @@
     }, { rootMargin: '0px 0px -8% 0px' });
     els.forEach(function (el) { io.observe(el); });
   }
-  KCOP.initReveal = initReveal;
 
   /* ---------- Init ---------- */
   document.addEventListener('DOMContentLoaded', function () {
