@@ -154,6 +154,7 @@ window.KCOP_DATA = (function () {
       price: 15900,
       listPrice: 19900,
       img: 'Wireless Door/Window Sensor Alarm x2\n(Product Shot)',
+      imgSrc: 'assets/img/11-p06-sensor.webp',
       keywords: '문열림 감지 센서 경보 창문 현관 서랍 자석',
       summary: '자석이 떨어지는 순간 바로 알립니다. 현관, 창문, 서랍 어디든 양면테이프로 3초 설치.',
       features: [
@@ -179,6 +180,7 @@ window.KCOP_DATA = (function () {
       price: 18900,
       listPrice: 22900,
       img: 'RFID Blocking Card Wallet\n(Open, Cards Inside)',
+      imgSrc: 'assets/img/12-p07-wallet.webp',
       keywords: 'RFID 카드지갑 스키밍 차단 교통카드',
       summary: '교통카드 겹침 오류를 없애고, 비접촉 결제 카드의 정보를 무단 판독(스키밍)으로부터 지킵니다.',
       features: [
@@ -203,6 +205,7 @@ window.KCOP_DATA = (function () {
       price: 19900,
       listPrice: 24900,
       img: 'Dummy CCTV Camera\n+ Warning Sticker Set',
+      imgSrc: 'assets/img/13-p08-dummy-cctv.webp',
       keywords: '모형 CCTV 가짜 카메라 더미 경고 스티커 방범',
       summary: '실제 카메라와 같은 외형과 깜빡이는 LED로 침입을 망설이게 합니다. 경고 스티커 4매 포함.',
       features: [
