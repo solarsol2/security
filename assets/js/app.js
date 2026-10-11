@@ -56,7 +56,7 @@
   KCOP.won = function (n) { return n.toLocaleString('ko-KR') + '원'; };
   // 제품 사진 자리 표시 (실사 교체 전까지 사용할 촬영 가이드 텍스트)
   KCOP.placeholder = function (text, w, h) {
-    return 'https://placehold.co/' + w + 'x' + (h || w) + '/E3E8E2/4F6155/png?text=' +
+    return 'https://placehold.co/' + w + 'x' + (h || w) + '/E2E8F0/475569/png?text=' +
       encodeURIComponent(text).replace(/%20/g, '+').replace(/%0A/g, '%5Cn');
   };
   KCOP.getProduct = function (id) {
