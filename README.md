@@ -35,8 +35,8 @@ Settings → Pages → Branch를 이 브랜치 / `root`로 지정하면 됩니�
 
 | 위치 | 파일 | 들어갈 사진 |
 | --- | --- | --- |
-| Hero 우측 | `index.html` `.hero__product` | 벽면 설치형 CCTV 누끼(투명 PNG, 1:1) |
-| 카테고리 4종 | `index.html` `.cat-card__media` | 상황별 대표 제품 연출컷(4:3) |
+| Hero 우측 ✅ | `assets/img/01-hero-cctv.webp` | 벽면 설치형 CCTV 누끼(투명 배경) |
+| 카테고리 4종 ✅ | `assets/img/02~05-cat-*.webp` | 상황별 대표 제품 연출컷(4:3) |
 | 상품 8종 | `assets/js/data.js` `img` | 화이트 배경 제품컷(1:1). 실사 경로를 `imgSrc`에 넣으면 우선 사용 |
 | 신뢰도 섹션 | `index.html` `.trust__main` / `.trust__inset` | 물류 관제실 요원(4:5) / 배송 차량(16:10) |
 
