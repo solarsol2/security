@@ -8,9 +8,9 @@
 - 사용자와는 한국어(존댓말)로 대화한다. 사용자는 Cafe24·git 초보이므로 용어를 풀어서 설명한다.
 
 ## 브랜치
-- 작업 브랜치: `claude/zealous-rubin-1e0ulw` (v2, 메인으로 사용)
-- 보관 브랜치: `claude/friendly-goldberg-v9yut1` (v1 다크 톤 버전, 수정 금지)
-- v1 파일 꺼내기: `git fetch origin claude/friendly-goldberg-v9yut1` 후 `git checkout origin/claude/friendly-goldberg-v9yut1 -- <경로>`
+- `main`: v2 메인 브랜치. `archive-v1`: v1 다크 톤 보관본(수정 금지).
+- 옛 이름 `claude/zealous-rubin-1e0ulw`(=v2 작업), `claude/friendly-goldberg-v9yut1`(=v1)은 정리 전까지 남아 있다. 세션이 옛 이름으로만 푸시할 수 있으면 그쪽에 올린 뒤 `main`에 반영한다.
+- v1 파일 꺼내기: `git fetch origin archive-v1` 후 `git checkout origin/archive-v1 -- <경로>`
 
 ## 구조 원칙
 - 페이지는 Cafe24 스킨 단위로 나눈다: 메인 / 상품 목록 / 상품 상세 / 장바구니 / 주문서 / 주문 완료 / 로그인·회원가입 / 마이페이지 / 게시판(공지·FAQ·견적문의) / 약관·고지.
